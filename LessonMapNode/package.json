@@ -1,0 +1,12 @@
+{
+  "name": "lesson-map-node",
+  "version": "0.0.0",
+  "description": "LessonMapNode",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "requirejs": "^2.3.6"
+  }
+}
