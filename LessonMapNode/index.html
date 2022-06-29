@@ -8,24 +8,30 @@
 <html>
 <head>
      <title>Simple Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./Style.css" />
 </head>
 <body>
-    <h2>Map of Bethlehem, PA</h2>
-    <div id="map"></div>
+     <h2>Location Map</h2>
+     <div id="dataEntry">
+        <label for="latitude">Latitude:  </label>
+        <input type="text" id="latitude" name="lat">
+        <label for="longitude">Longitude:  </label>
+        <input type="text" id="longitude" name="lng">
+        <input type="button" id="submit" value="Submit">
+     </div>
+     <div id="map"></div>
 
-    <!--
-     The `defer` attribute causes the callback to execute after the full HTML
-     document has been parsed. For non-blocking uses, avoiding race conditions,
-     and consistent behavior across browsers, consider loading using Promises
-     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+        <!--
+        The `defer` attribute causes the callback to execute after the full HTML
+        document has been parsed. For non-blocking uses, avoiding race conditions,
+        and consistent behavior across browsers, consider loading using Promises
+        with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-            defer></script>
-    <script type="module" src="./index.js"></script>
-    <script type="module" src="./server.js"></script>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAadCH0kiBT3n_nwECC8XhtW18RJP40ltA&callback=initMap&v=weekly" defer></script>
+        <script src="./index.js" async></script>
+
 </body>
 </html>
 <!-- [END maps_map_simple] -->
